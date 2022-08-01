@@ -7,10 +7,10 @@ module.exports = function(app) {
       }));
      
      app.get('/',function(req,res){
-        res.render('index.html')
+        res.render('index.html')    // 제일 먼저 실행 됨(index.html)
      });
      app.get('/about',function(req,res){
-        res.render('about.html');
+        res.render('about.html');   
     });
     app.get('/work',function(req,res){
       res.render('work.html');
